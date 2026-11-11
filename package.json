@@ -1,0 +1,14 @@
+{
+  "name": "pw-busy-renderer-repro",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Minimal repro: connectOverCDP hangs when a pre-existing page's renderer is alive but busy (follow-up to microsoft/playwright#42936)",
+  "scripts": {
+    "busy": "node repro-busy-renderer.mjs",
+    "crashed": "node repro-crashed-page-control.mjs"
+  },
+  "dependencies": {
+    "playwright-core": "1.65.0"
+  }
+}
